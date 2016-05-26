@@ -4,28 +4,28 @@ html(lang="es")
     meta(charset="UTF-8")
     title Atributos (jade)
     style(stylesheet).
-      .verde    { color: green; }
-      .rojo     { color: red; }
-      .amarillo { background-color: yellow; }
-      .centrar  { text-align: center; }
-      .rayado   { text-decoration: underline; }
-      .active   { background-color: green; color: lime; }
+      .verde {color: green;}
+      .rojo {color: red;}
+      .amarillo {background-color: yellow; }
+      .centrar {text-align: center;}
+      .rayado {text-decoration:underline}
+      .active {background-color: #17E983;color: blue;}
   body
     h1 Atributos (jade)
     // Un solo atributo
-    a(href='http://www.google.com') Ir a Google
+    a(href='http://www.google.com') Ir a google
     // Varios atributos
     | &nbsp; | &nbsp;
     a(href='http://www.yahoo.com', target='_blank', class='link') Ir a Yahoo
+    //Variable
     br
     br
-    // Variable 
-    - var color = true
-    // Condicionar valores de los atributos
-    div(class=color ? 'verde' : 'rojo') Color
+    -var color = false
+    //Condicionar valores de los atributos
+    div(class=color ? 'verde': 'rojo') Color
     br
     br
-    // Atributos en varias lineas
+    //Atributos en varias lineas
     input(
       type='number'
       min='10'
@@ -39,7 +39,7 @@ html(lang="es")
     input(
       type='radio'
       name='bool'
-      checked = false
+      checked = false        
     )
     | Verdadero
     input(
@@ -49,23 +49,23 @@ html(lang="es")
     )
     br
     br
-    // Atributo Style
-    button(style={ 'background-color': 'crimson', color: 'white', border: 'none', padding: '10px' }) Boton
+    //Atributo Style
+    button(style={'background-color': 'black', color: 'orange', border: 'none', padding: '10px' }) Boton
     // Atributo Class
     - var misclases = ['amarillo', 'centrar', 'rayado']
     h2(class=misclases) ADSI 1132816
     br
     br
-    // Sección Actual
-    - var actual = '/servicios'
+    // Seccion Actual
+    - var actual='/nosotros'
     nav
-      li: a(class={active: actual === '/'}          href='/') Inicio
-      li: a(class={active: actual === '/nosotros'}  href='/nosotros') Nosotros
+      li: a(class={active: actual === '/'} href='/') Inicio
+      li: a(class={active: actual === '/nosotros'} href='/nosotros') Nosotros
       li: a(class={active: actual === '/servicios'} href='/servicios') Servicios
-      li: a(class={active: actual === '/contacto'}  href='/contacto') Contacto
+      li: a(class={active: actual === '/contacto'} href='/contacto') Contacto  
     br
     br
-    // Clases e Identificadores Literales
+    //Clases e Identificadores Literales
     .amarillo Texto
     br
     .amarillo.centrar.rayado Texto
@@ -73,12 +73,5 @@ html(lang="es")
     #cod1 Texto
     br
     #cod2.amarillo.centrar.rayado Texto
-    br
-    br
-    // &attributes
-    - var atributos = {'data-color': 'red'};
-      div(class="rojo")&attributes(atributos) Lorem Ipsum
-        
-    
-    
-      
+    //&attributes
+    -var atributos = {'data-color': 'red'};

@@ -1,0 +1,17 @@
+doctype
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title Document
+  body
+    | Plain text can include <strong>html</strong>
+    p
+      | It must always be on its own line
+    p Plain text can include <strong>html</strong>
+    
+    script.
+      var usingJade = true;
+    if (usingJade)
+      alert('Tu eres increible')
+    else
+      console.log('use jade')
