@@ -1,0 +1,23 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Document
+  body
+    h1 graficos vectoriales
+    hr
+    h4 cuadrado
+    svg(width='200', height='200px')
+      rect(x=30, y=30, width=180, height= 180 ,fill="aqua")
+    h4 circulo
+    svg(width='200', height='200px')
+      circle(cx='100', cy='100', r='90', fill='aqua')
+    h4 rectangulo
+    svg(width='300', height='150px')
+      rect(x=10, y=30, width=200, height= 140 ,fill="aqua")
+    h4 triangulo
+    svg(width='300', height='300px')
+      polygon(points='100,10 190,190 10,190' fill='red')
+    h4 texto
+    svg(width='300', height='300px')
+      rect(x=30, y=30, width=180, height= 180 ,fill="aqua")
+      text(x='60' y='110' fill='red' font-family='arial' font-size='40') hola :3

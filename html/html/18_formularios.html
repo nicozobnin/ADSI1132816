@@ -1,0 +1,67 @@
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>cuestionario</title>
+  </head>
+  <body>
+    <form method="post">
+      <fieldset>
+        <legend>datos de usuario</legend>
+
+        <label for="nombres">nombres</label>
+        <input type="text" id="nombres"/><br/><br/><br/>
+        <!--contraseña-->
+        <label for="contrasena">contraseña</label>
+        <input type="password" id="contraseña"/><br/><br/><br/>
+        <!--foto-->
+        <label for="fot">subir foto</label>
+        <input type="file" id="foto" accept="image/*"/><br/><br/>
+        <!--lenguaje de programacion-->
+        <label for="lenguajes">lenguajes programacion</label><br/>
+        <label>PHP
+          <input type="Checkbox" name="lenguajes" value="PHP"/>
+        </label>
+        <label>java
+          <input type="Checkbox" name="lenguajes" value="java"/>
+        </label>
+        <label>C#
+          <input type="Checkbox" name="lenguajes" value="C#"/>
+        </label><br/><br/>
+
+        <label for="genero">genero</label>
+        <select>
+          <option>seleccione...</option>
+          <option value="F">Femenino</option>
+          <option value="M">Masculino</option>
+          <option value="O">Otro</option>
+        </select><br/><br/>
+
+        <label for="deporte">Deporte</label>
+        <select multiple="multiple" id="deporte">
+          <option value="1">futbol</option>
+          <option value="2">Baloncesto</option>
+          <option value="3">tennis</option>
+          <option value="4">natacion</option>
+        </select><br/><br/>
+
+        <label>Nacionalidad</label><br/>
+        <label>colombia
+          <input type="radio" name="nacionalidad" value="colombia"/>
+        </label>
+        <label>venezuela
+          <input type="radio" name="nacionalidad" value="Venezuela"/>
+        </label>
+        <label>ecuador
+          <input type="radio" name="nacionalidad" value="ecuador"/>
+        </label><br/><br/>
+        <!--descripciones de los cojones-->
+        <label for="descripcion">Descripcion</label>
+        <textarea id="descripcion" cols="40" rows="6"></textarea><br/><br/>
+        <!--botones-->
+        <input type="submit" value="enviar datos"/>
+        <input type="reset" value="reiniciar formulario"/>
+      </fieldset>
+    </form>
+  </body>
+</html>

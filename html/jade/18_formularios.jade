@@ -1,0 +1,74 @@
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title cuestionario
+  body
+    form(method='post')
+      fieldset
+         legend datos de usuario
+         //nombres----------------------
+         label(for='nombres') nombres
+         input(type='text', id='nombres')
+         br
+         br
+         br
+         //contraseña
+         label(for='contrasena') contraseña
+         input(type='password', id='contraseña')
+         br
+         br
+         br
+         //foto
+         label(for="fot") subir foto
+         input(type="file", id='foto', accept='image/*')
+         br
+         br
+         //lenguaje de programacion
+         label(for='lenguajes') lenguajes programacion
+         br
+         label PHP
+           input(type="Checkbox", name='lenguajes', value='PHP')
+         label java
+           input(type="Checkbox", name='lenguajes', value='java')
+         label C#
+           input(type="Checkbox", name='lenguajes', value='C#')
+         br
+         br
+         //genero-------------------------
+         label(for='genero') genero
+         select
+           option seleccione...
+           option(value='F') Femenino
+           option(value='M') Masculino
+           option(value='O') Otro
+         br 
+         br
+         //deporte-----------------
+         label(for='deporte') Deporte
+         select(multiple='multiple', id='deporte')
+            option(value='1') futbol
+            option(value='2') Baloncesto
+            option(value='3') tennis
+            option(value='4') natacion
+         br
+         br
+         //nacionalidad
+         label Nacionalidad
+         br
+         label colombia
+           input(type="radio", name='nacionalidad', value='colombia')
+         label venezuela
+           input(type="radio", name='nacionalidad', value='Venezuela')
+         label ecuador
+           input(type="radio", name='nacionalidad', value='ecuador')
+         br
+         br
+         //descripciones de los cojones
+         label(for='descripcion') Descripcion
+         textarea(id='descripcion' cols='40' rows='6')
+         br
+         br
+         //botones
+         input(type="submit", value='enviar datos')
+         input(type="reset", value='reiniciar formulario')
+

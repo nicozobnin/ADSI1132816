@@ -1,0 +1,24 @@
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>atributos (formulario)</title>
+  </head>
+  <body>
+    <h1>atributos (formulario)</h1>
+    <hr/>
+    <fieldset>
+      <form method="post"></form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required="required"/><br/>
+      <input type="submit" value="Enviar"/>
+    </fieldset><br/><br/>
+    <fieldset>
+      <legend>No valdiar / No Autocompletar</legend>
+      <form method="post" autocomplete="off" novalidate="novalidate"></form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required="required"/><br/>
+      <input type="submit" value="enviar"/>
+    </fieldset>
+  </body>
+</html>

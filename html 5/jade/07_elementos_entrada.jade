@@ -1,0 +1,25 @@
+
+html(lang="es")
+  head
+    meta(chdoctypearset="UTF-8")
+    title Elementos de entradas (formulario)
+  body
+    h1 elementos de entradas (formulario)
+    hr
+    form(method='post')
+      label(for='lenguajes') lista de lenguajes de programacion 
+      input(list='lenguajes')
+      datalist(id='lenguajes')
+        option(value="phyton") phyton
+        option(value="ruby") ruby
+        option(value="php") php
+        option(value="C#") C#
+      br
+      br
+      label(for='generador') generador
+      keygen(id='generador')
+      br
+      br
+      label(for='salida') salida:
+      input(type='range', id='rango', oninput='salida.value=this.value')
+      output(id='salida') 0
